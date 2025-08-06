@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><h1 class="logo">Raj Mohan</h1></nav>
+<form class="auth">
+<h2>Admin Login</h2>
+<input id="u" placeholder="Username">
+<input id="p" placeholder="Password" type="password">
+<button type="button" onclick="check()">Login</button>
+</form>
+<script>
+function check(){
+ if(document.getElementById('u').value==='koushik' && document.getElementById('p').value==='sky123'){
+  window.location='admin.html';
+ }else alert("Wrong!");
+}
+</script>
+</body>
+</html>
